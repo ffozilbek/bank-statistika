@@ -10,7 +10,7 @@ const StatusSelect = () => {
 
   return (
     <div className="p-5 bg-white shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-75 ease-linear rounded-md">
-      <label className="block text-center mb-4">
+      <label className="block text-center mb-4 cursor-pointer">
         Fitler turini tanlang
       </label>
       <select

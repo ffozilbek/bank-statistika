@@ -1,11 +1,11 @@
-import BarChart  from "./BarChart"
-import PieChart from "./PieChart"
+import StatusBarChart  from "./StatusBarChart"
+import StatusPieChart from "./StatusPieChart"
 
 const Charts = () => {
   return (
     <div className="flex flex-col md:flex-row gap-6 items-start justify-between">
-      <BarChart />
-      <PieChart />
+      <StatusBarChart />
+      <StatusPieChart />
     </div>
   )
 }
