@@ -3,7 +3,6 @@ import useFetch from '../hooks/useFetch';
 
 const CardApplicationForm = () => {
   const { data: filiallar, loading, error } = useFetch('bank_filiali');
-  console.log(filiallar);
   const [pasport, setPasport] = useState('');
   const [branchId, setBranchId] = useState('');
   const [cardType, setCardType] = useState('');
@@ -17,8 +16,8 @@ const CardApplicationForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md mt-10">
-      <h2 className="text-2xl font-semibold mb-4 text-center">Karta Ariza Formasi</h2>
+    <div className="max-w-md w-full max-h-[60vh] mx-auto bg-white p-6 rounded-lg shadow-md mt-10">
+      <h2 className="text-2xl font-semibold mb-4 text-center">Ariza Formasi</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
         <label className="block mb-1 font-medium">Pasport seriyasi</label>
@@ -43,7 +42,7 @@ const CardApplicationForm = () => {
             >
               <option value="">Filial tanlang</option>
               {filiallar.map((f) => (
-                <option key={f.id} value={f.id}>{f.Filial_nomi}</option>
+                <option key={f.Id} value={f.id}>{f.Filial_nomi}</option>
               ))}
             </select>
           )}

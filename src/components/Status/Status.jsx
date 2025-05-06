@@ -1,4 +1,3 @@
-import Card from "../ui/Card";
 import {
   CreditCardIcon,
   CheckCircleIcon,

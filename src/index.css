@@ -5,6 +5,10 @@
   --color-dusty-indigo: #4d4c7d;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #f4f6ff;
   font-family: sans-serif;

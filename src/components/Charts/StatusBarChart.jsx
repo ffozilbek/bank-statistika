@@ -4,11 +4,7 @@ import useFetch from '../../hooks/useFetch';
 
 
 const StatusBarChart = () => {
-  const xLabels = [];
   const { data, loading, error } = useFetch("bank_filiali");
-
-  console.log(data);
-
 
   return (
     <div className="w-full p-5 bg-white shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-75 ease-linear rounded-md">
