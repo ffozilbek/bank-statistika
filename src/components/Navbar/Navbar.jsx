@@ -8,9 +8,11 @@ const Navbar = () => {
     <nav className="bg-blue-800 py-8 px-4">
       <Link
         to="/"
-        className="text-blue-300 text-xl font-bold mb-2 block hover:opacity-80 transition-opacity duration-75 ease-linear text-center text-shadow-lg/20"
+        className="text-blue-200 text-xl font-bold mb-2 block hover:opacity-80 transition-opacity duration-75 ease-linear leading-5"
       >
-        C<span className="text-blue-100">Flow</span>
+        <div className="flex flex-col">
+        Predi<span className="text-black-900 text-white">CARD</span>
+        </div>
       </Link>
       <Link
         to="/add_data"
