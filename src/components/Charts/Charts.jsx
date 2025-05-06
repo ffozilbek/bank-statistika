@@ -3,7 +3,7 @@ import StatusPieChart from "./StatusPieChart"
 
 const Charts = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-6 items-start justify-between">
+    <div className="flex flex-col md:flex-row gap-6 items-stretch justify-between">
       <StatusBarChart />
       <StatusPieChart />
     </div>

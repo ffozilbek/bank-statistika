@@ -5,12 +5,12 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="h-[100vh] bg-blue-800 top-0 left-0 py-8 px-4">
+    <nav className="fixed top-0 left-0 h-full bg-blue-800 py-8 px-4">
       <Link
         to="/"
-        className="text-white font-bold mb-5 block hover:opacity-80 transition-opacity duration-75 ease-linear"
+        className="text-blue-300 text-xl font-bold mb-2 block hover:opacity-80 transition-opacity duration-75 ease-linear text-center text-shadow-lg/20"
       >
-        LOGO
+        C<span className="text-blue-100">Flow</span>
       </Link>
       <Link
         to="/add_data"

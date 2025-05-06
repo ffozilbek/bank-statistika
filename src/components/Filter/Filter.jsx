@@ -20,7 +20,6 @@ const StatusSelect = () => {
       >
         <option value="" disabled>Tanlang...</option>
         <option value="all">Karta turi orqali</option>
-        <option value="approved">Viloyatlar orqali</option>
         <option value="pending">Bank filiallari orqali</option>
       </select>
     </div>

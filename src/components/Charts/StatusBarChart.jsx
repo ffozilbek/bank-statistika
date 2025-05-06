@@ -1,27 +1,24 @@
 import React from 'react';
-import { BarChart } from '@mui/x-charts/BarChart';
+import { LineChart } from '@mui/x-charts/LineChart';
+import useFetch from '../../hooks/useFetch';
+
 
 const StatusBarChart = () => {
-  const xLabels = ['Karta', 'Viloyatlar', 'Filiallar'];
+  const xLabels = [];
+  const { data, loading, error } = useFetch("bank_filiali");
+
+  console.log(data);
+
 
   return (
     <div className="w-full p-5 bg-white shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-75 ease-linear rounded-md">
-      <BarChart
-        xAxis={[
-          {
-            id: 'status',
-            data: xLabels,
-            scaleType: 'band',
-          },
-        ]}
-        series={[
-          {
-            data: [120, 75, 30, 15],
-            color: '#1B9C85',
-          },
-        ]}
-        width={500}
+      <LineChart
+        width={400}
         height={300}
+        series={[
+          { data: [30, 40, 35, 50, 49, 60, 70,150,200,110,85,55], label: 'Karta Arizalari' },
+        ]}
+        xAxis={[{ scaleType: 'point', data: ['Yan', 'Fev', 'Mar', 'Apr', 'May', 'Iyun', 'Iyul','Avg','Sen','Okt','Noy','Dek'] }]}
       />
     </div>
   );

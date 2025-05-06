@@ -1,5 +1,3 @@
-
-
 const Card = ({title,value,icon}) => {
   return (
     <div className='w-[100%] p-5 bg-white shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-75 ease-linear rounded-md relative'>
